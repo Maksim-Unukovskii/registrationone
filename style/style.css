@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.registration-confirmation_button, .registration-information-label_input, .registration-loginpass-label_input {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  max-width: 500px;
+  max-height: 700px;
+  background-color: rgba(135, 206, 235, 0.3);
+  border-radius: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  padding: 50px 30px;
+}
+
+.registration-loginpass {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+.registration-loginpass-label_input {
+  margin: 20px;
+}
+.registration-information-label_input {
+  margin: 20px;
+}
+.registration-confirmation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.registration-confirmation-boxcgbx {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.registration-confirmation-boxcgbx_checkbox {
+  margin: 20px;
+}
+.registration-confirmation-boxcgbx_text {
+  margin: 20px 0;
+}
+.registration-confirmation_button {
+  width: 50px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.registration-confirmation_button:hover {
+  background-color: white;
+}

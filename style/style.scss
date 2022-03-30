@@ -1,0 +1,75 @@
+@import 'reset.scss';
+@import 'input.scss';
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    max-width: 500px;
+    max-height: 700px;
+    background-color: rgba($color: #87ceeb, $alpha: 0.3);
+    border-radius: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 50px 30px;
+
+}
+
+.registration {
+
+    &-loginpass {
+        display: flex;
+        flex-direction: row;
+
+        &-label {
+
+            &_input {
+                @extend %imput;
+                margin: 20px;
+            }
+        }
+    }
+
+    &-information {
+        &-label {
+            &_input {
+                @extend %imput;
+                margin: 20px;
+            }
+
+        }
+    }
+
+    &-confirmation{
+        display: flex;
+        text-align: center;
+        justify-content: space-between;
+
+        &-boxcgbx{
+            display: flex;
+
+            &_checkbox{
+                margin: 20px;
+            }
+
+            &_text{
+                margin: 20px 0;
+            }
+        }
+
+        &_button{
+            @extend %imput;
+            width: 50px;
+            transition: .3s;
+            cursor: pointer;
+            
+            &:hover{
+                background-color: white;
+            }
+        }
+
+    }
+}
