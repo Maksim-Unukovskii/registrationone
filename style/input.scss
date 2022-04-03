@@ -1,6 +1,14 @@
-%imput{
+%imput {
     background: transparent;
     border: none;
     border-bottom: 1px solid #fff;
     outline: none;
+}
+
+%link {
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 10px;
+    border: 1px solid white;
 }

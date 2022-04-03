@@ -43,33 +43,52 @@ body {
         }
     }
 
-    &-confirmation{
+    &-confirmation {
         display: flex;
         text-align: center;
         justify-content: space-between;
+        margin-bottom: 10px;
 
-        &-boxcgbx{
+        &-boxcgbx {
             display: flex;
 
-            &_checkbox{
+            &_checkbox {
                 margin: 20px;
             }
 
-            &_text{
+            &_text {
                 margin: 20px 0;
             }
         }
 
-        &_button{
+        &_button {
             @extend %imput;
             width: 50px;
             transition: .3s;
             cursor: pointer;
-            
-            &:hover{
+
+            &:hover {
                 background-color: white;
             }
         }
 
     }
+}
+
+.link {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+
+    &-index {
+        & a {
+            @extend %link;
+        }
+    }
+    &-login{
+        & a{
+            @extend %link;
+        }
+    }
+
 }
